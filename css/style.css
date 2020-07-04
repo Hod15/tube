@@ -1,0 +1,292 @@
+@import url('animate.css');
+@font-face
+{
+    font-family: 'baloo';
+    src: url('../BalooTamma2-Regular.ttf') format('truetype');
+}
+@import url('all.css');
+
+@keyframes zoom
+{  
+    100%  {transform: scale(1, 1); } 
+    50% {transform: scale(1.8, 1.8); } 
+}
+
+
+.spin
+{
+    -webkit-animation: fa-spin 4s infinite linear;
+          animation: fa-spin 4s infinite linear;
+}
+
+.tab-content
+{
+    display : none;
+}
+
+.tab-content.active
+{
+    display : block;
+}
+
+.music-img
+{
+    height: 5rem;
+    width: 5rem;
+    transition: 0.4s;
+}
+
+.music-play-img
+{
+    height: 9rem;
+    width: 9rem;
+    margin: auto;
+}
+
+body
+{
+    background-color: #3A4149;
+    font-family: "baloo";
+    color: #a8a6a6;
+    padding: 3rem 4rem;
+    overflow: hidden;
+}
+.logo
+{
+    height: 8rem;
+}
+
+a:hover
+{
+    text-decoration: none;
+}
+
+
+input
+{
+    color: rgb(202, 195, 195);
+}
+.bg-dangee
+{
+    background-color:#772b33 ;
+}
+
+.music-img:hover
+{
+    transform: scale(1.15)
+}
+
+
+.form-control
+{
+    border: 0;
+    background-color: #3A4149;
+    color: #7D7D7D;
+}
+
+.form-control:hover
+{
+    background-color: #3A4149;
+    color: #7D7D7D;
+}
+
+.form-control:focus
+{
+    background-color: #3A4149;
+}
+
+
+.search
+{
+    width: auto;
+    border-radius: 8rem;
+    transition: 0.5s;
+    padding: 0 1rem;
+}
+
+.search:focus
+{
+    width: auto;
+    padding:  0 5rem ;
+    border-radius: 8rem;
+}
+
+.form-control::-webkit-input-placeholder 
+{
+    color: #7D7D7D;
+    opacity: 1;
+}
+  
+.form-control::-moz-placeholder 
+{
+    color: #7D7D7D;
+    opacity: 1;
+}
+  
+.form-control:-ms-input-placeholder 
+{
+    color: #7D7D7D;
+    opacity: 1;
+}
+  
+.form-control::-ms-input-placeholder 
+{
+    color: #7D7D7D;
+    opacity: 1;
+}
+  
+.form-control::placeholder 
+{
+    color: #7D7D7D;
+    opacity: 1;
+}
+
+.input-group-text
+{
+    background-color: #363B41;
+    border: 0;
+    color: #7D7D7D;
+}
+.normal
+{
+    color: white;
+    text-decoration: none;
+}
+
+.normal:hover
+{
+    color: white;
+    text-decoration: underline;
+}
+
+.fleche
+{
+    color: #7D7D7D;
+}
+
+.main
+{
+    background-color: #2B3238;
+    height: 80vh;
+    overflow-y: auto;
+}
+
+/*
+scroll bar designe*/
+
+::-webkit-scrollbar
+{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb
+{
+    background-color: #7D7D7D;
+    width: 1px;
+    
+}
+
+::-webkit-scrollbar-track-piece
+{
+    background-color: #3A4149;
+}
+
+.music-box
+{
+    height: 80vh;
+}
+
+.player
+{
+    display: none;
+}
+
+
+
+@media (max-width: 767px) 
+{
+    .music-box
+    {
+        height: 5rem;
+        position: fixed;
+        bottom: 30px;
+        right: 0;
+    }
+
+    .music-box .img-box
+    {
+        display: none;
+    }
+
+    .music-play-img
+    {
+        height: 4rem;
+        width: 4rem;
+    }
+
+    .controls
+    {
+        position: relative;
+        top: -1rem;
+    }
+
+    .ad-link
+    {
+        display: none;
+    }
+    
+    .main
+    {
+        height: 85vh;
+    }
+
+    body
+    {
+        padding: 0;
+    }
+
+}
+
+a
+{
+    color: #777777;
+}
+
+a:hover
+{
+    color: #dc3545;
+}
+
+a.love
+{
+    animation: zoom 0.5s infinite ;
+    color: #dc3545;
+}
+
+@media (min-width: 768px) 
+{
+    .menu
+    {
+        height: 80vh;
+    }
+
+    .music-box
+    {
+        height: 80vh;
+    }
+}
+
+#play
+{
+    display: none;
+}
+
+#pause
+{
+    display:none;
+}
+
+button
+{
+    border: none;
+    background-color: transparent;
+}
